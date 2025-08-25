@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Weather App</title>
+    <link rel="stylesheet" href="weatherapp.css" />
+  </head>
+  <body>
+    <!-- For html  -->
+
+    <section class="top-banner">
+      <div class="heading-container">
+        <h1 class="heading">Weather App</h1>
+        <form class="form-container">
+          <input type="text" placeholder="e.g. Sydney" autofocus class="searchbox" />
+          <button type="submit" class="submitBtn">Submit</button>
+          <span class="msg"></span>
+        </form>
+      </div>
+    </section>
+
+    <section class="info-section">
+      <div class="container">
+        <!-- Display the weather info here after fetch -->
+        <ul class="cities"><ul>
+
+      </div>
+    </section>
+
+    <footer class="app-footer">
+      <p>Made with love from DeathFish 🐟</p>
+    </footer>
+
+    <script src="server.js"> </script>
+  </body>
+
+</html>
