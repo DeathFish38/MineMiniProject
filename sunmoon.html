@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+
+    <title>Sun and Moon Animation</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="sunmoon.css" />
+  </head>
+
+  <body>
+    <div class="btn-box">
+      <div onclick="change('light')">
+        <i class="fas fa-sun" aria-hidden="true"></i> I'm the Sun
+      </div>
+
+      <div onclick="change('dark')">
+        <i class="fas fa-moon" aria-hidden="true"></i> I'm the Moon
+      </div>
+    </div>
+
+    <div class="dark" id="container">
+      <div class="bg"></div>
+      <div class="moon-box">
+        <div class="moon"></div>
+      </div>
+      <div class="sun-box">
+        <div class="sun"></div>
+      </div>
+      <div class="sea"></div>
+    </div>
+
+    <script>
+      function change(mode) {
+        const container = document.getElementById("container");
+        container.classList.remove("light", "dark"); //clear mode
+        container.classList.add(mode);
+      }
+    </script>
+  </body>
+</html>
