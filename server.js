@@ -3,7 +3,7 @@ const input = document.querySelector(".top-banner input");
 const msg = document.querySelector(".top-banner .msg");
 const list = document.querySelector(".info-section .cities");
 //API key for weather
-const apiKey = "df0a849234be69b6d4f9eeed7f06ef66";
+const apiKey = "";
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
